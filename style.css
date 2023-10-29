@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(iwood-R5v8Xtc0ecg-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home_btn {
+    width: 170px;
+    height: 50px;
+    background: none;
+    border: 3px solid rgb(13, 226, 102);
+    border-radius: 20px;
+    transition: 500ms ease-in-out;
+    color: rgb(13, 226, 102);
+    font-size: large;
+}
+
+.home_btn:hover {
+    transform: translateY(-3px);
+    background-color: rgb(13, 226, 102);
+    color: white;
+
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 100%;
+    background: rgb(13, 226, 102);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
